@@ -1,7 +1,257 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<head>
+		<title>kzf on GitHub</title>
+		<link rel="stylesheet" href="style/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Chau+Philomene+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<section class="masthead vertical-center">
+			<header class="nav-header">
+				<h1 class="header-invisible">Home</h1>
+				<div class="logo-container">
+					<div class="logo">
+						<div class="logo-image"></div>
+					</div>
+				</div>
+				<nav class="header-menu">
+					<div class="slide-nav">
+						<a data-smoothscroller class="section-link-0" href="#toc-projects">Projects</a>
+						<a data-smoothscroller class="section-link-1" href="#toc-demos">Demos</a>
+						<a data-smoothscroller class="section-link-2" href="#toc-demos">Other</a>
+						<a data-smoothscroller class="section-link-3" href="#toc-demos">Test Link</a>
+					</div>
+				</nav>
+			</header>
+		</section>
+		<section class="page container-fluid">
+			<div class="row">
+				<div class="col-md-3">
+					<div id="toc-nav" class="toc-nav visible-md visible-lg">
+					</div>
+				</div>
+				<div class="col-md-9">
+					<section class="section-header">
+						<h1>Projects</h1>
+						<div class="section-links">
+							<a data-smoothscroller class="section-link-0" href="#toc-card-zoo">Card Zoo</a>
+							<a data-smoothscroller class="section-link-1" href="#toc-achievement-hunter">Achievement Hunter</a>
+							<a data-smoothscroller class="section-link-2" href="#toc-sketch-animator">Sketch Animator</a>
+							<a data-smoothscroller class="section-link-3" href="#toc-world-countries-quiz">World Countries Quiz</a>
+							<a data-smoothscroller class="section-link-4" href="#toc-know-your-globe">Know Your Globe</a>
+							<a data-smoothscroller class="section-link-5" href="#toc-book-hunt">Book Hunt</a>
+						</div>
+
+						<section class="project">
+							<h2><a href="http://cardzoo.meteor.com">Card Zoo</a></h2>
+							<p>
+								<a href="http://cardzoo.meteor.com"><img src="images/cardzoo.png" class="site-img"></a>
+								My largest solo project to date, Card Zoo is a multiplayer online card game in the vain of <a href="http://en.wikipedia.org/wiki/Hearthstone:_Heroes_of_Warcraft">Hearthstone</a>. This project originally started as an exercise in recreating the Hearthstone interface in Javascript, but headed in a different direction once I realised it was a good opportunity to learn <a href="https://www.meteor.com/">Meteor</a>. Meteor allows you to use Javascript for the front and back end, and in fact the same code on client and server, so the entire project is written in Javascript! Features include:
+								<ul>
+									<li>User registration</li>
+									<li>Realtime multiplier gameplay</li>
+									<li>Chat</li>
+									<li>Opponents actions (hovering cards, etc.) visible in realtime</li>
+									<li>Build and save decks</li>
+								</ul>
+								The project is being actively worked on and at the moment does not support mobile or touch devices.
+							</p>
+							<p class="text-center">
+								<a class="github-link" href="https://github.com/kzf/CardZoo">View Source on GitHub</a>
+							</p>
+							<footer class="tags-footer">
+								<span class="tag">Meteor</span>
+								<span class="tag">Node.js</span>
+								<span class="tag">MongoDB</span>
+							</footers>
+						</section>
+
+						<section class="project">
+							<h2><a href="https://kzf.github.io/AchievementHunter">Achievement Hunter</a></h2>
+							<a href="https://kzf.github.io/AchievementHunter"><img src="images/ach.png" class="site-img"></a>
+							<p>
+								A JavaScript experiment attempting to boil down the experience of playing a modern game to its essence. Fully responsive design including a custom reponsive pagination system. Extensive use of Javascript events to detect achievement-worthy actions. Takes advantage of Gulp for building the site which allows the Javascript to be splintered and easier to work with but compiled into a single file to optimise page load times.
+							</p>
+							<p class="text-center">
+								<a class="github-link" href="https://github.com/kzf/AchievementHunter">View Source on GitHub</a>
+							</p>
+							<footer class="tags-footer">
+								<span class="tag">Javascript</span>
+								<span class="tag">HTML5</span>
+							</footers>
+						</section>
+
+						<section class="project">
+							<h2><a href="https://github.com/kzf/SketchAnimator">Sketch Animator</a></h2>
+							<p>
+								<a href="https://github.com/kzf/SketchAnimator"><img src="images/sketch.png" class="site-img"></a>
+								A tool to pose and animate a 2d sketch. This was initially an implementation of the <a href="http://www-ui.is.s.u-tokyo.ac.jp/~takeo/research/rigid/">As-Rigid-As-Possible Shape Manipulation</a> algorithm for the Coursera course <a href="https://www.coursera.org/course/interactivegraphics">Interactive Computer Graphics</a>, but I tried to build a user-friendly UI and incorporate the ability to animate your sketches. Unfortunately, the A.R.A.P. algorithm involves a lot of computation which hammers a lot of Javascript engines so the tool may not run smoothly (particularly on mobile). If this is the case for you try to run in it Chrome which tends to have the best performing Javascript engine.
+							</p>
+							<p class="text-center">
+								<a class="github-link" href="https://github.com/kzf/SketchAnimator">View Source on GitHub</a>
+							</p>
+							<footer class="tags-footer">
+								<span class="tag">Javascript</span>
+								<span class="tag">jQuery</span>
+							</footers>
+						</section>
+
+						<section class="project">
+							<h2><a href="https://kzf.github.io/WorldCountriesQuiz">World Countries Quiz</a></h2>
+							<p>
+								<a href="https://kzf.github.io/WorldCountriesQuiz"><img src="images/wcq.png" class="site-img"></a>
+								A mobile webapp capable quiz app testing knowledge of countries. Keeps track of your record for each country using HTML5 localstorage and lets you 'Swot Up' on the countries you have been struggling with. Uses the fantastic <a href="https://github.com/devbridge/jQuery-Autocomplete">jQuery Autocomplete</a> to suggest country names. Uses d3.js for globe visualisation and lettering.js for text animations.
+							</p>
+							<p class="text-center">
+								<a class="github-link" href="https://github.com/kzf/WorldCountriesQuiz">View Source on GitHub</a>
+							</p>
+							<footer class="tags-footer">
+								<span class="tag">localstorage</span>
+								<span class="tag">HTML5</span>
+								<span class="tag">d3.js</span>
+								<span class="tag">jQuery</span>
+							</footers>
+						</section>
+
+						<section class="project">
+							<h2><a href="https://kzf.github.io/KnowYourGlobe">Know Your Globe</a></h2>
+							<a href="https://kzf.github.io/KnowYourGlobe"><img src="images/kyg.png" class="site-img"></a>
+							<p>
+								Inspired by an interesting quiz question that was surprisingly tricky, I decided to make this simple app to test out how difficult these types of questions are to answer in general. It was a good opportunity to learn the Google Maps API. Try it out and see what you think!
+							</p>
+							<p class="text-center">
+								<a class="github-link" href="https://github.com/kzf/KnowYourGlobe">View Source on GitHub</a>
+							</p>
+							<footer class="tags-footer">
+								<span class="tag">Google Maps API</span>
+								<span class="tag">jQuery</span>
+							</footers>
+						</section>
+
+						<section class="project">
+							<h2><a href="https://kzf.github.io/BookHunt">Book Hunt</a></h2>
+							<a href="https://kzf.github.io/BookHunt"><img src="images/bookhunt.png" class="site-img"></a>
+							<p>
+								A project that aims to replicate the experience of browsing books at a physical library. After an initial search users explore the virtual bookshelf by choosing a subject of a book they like to bring up similar books. The project is fully responsive and works great on tablets/phones where the device can be physically turned to read titles on the spines.
+							</p>
+							<p class="text-center">
+								<a class="github-link" href="https://github.com/kzf/BookHunt">View Source on GitHub</a>
+							</p>
+							<footer class="tags-footer">
+								<span class="tag">Bootstrap</span>
+								<span class="tag">CSS</span>
+								<span class="tag">jQuery</span>
+								<span class="tag">AJAX</span>
+							</footers>
+						</section>
+
+						
+
+					</section>
+					<section class="section-header">
+						<h1>Demos</h1>
+						<p class="header-blurb">
+							Demos are smaller projects that are more experimental and do not have as much polish. They may use new features unavailable in older browsers or not scale on small screens, for instance.
+						</p>
+						<div class="section-links">
+							<a data-smoothscroller class="section-link-0" href="#toc-webgl-game-of-life">WebGL Game of Life</a>
+							<a data-smoothscroller class="section-link-1" href="#toc-marching-squares-metablobs">Marching Squares Metablobs</a>
+							<a data-smoothscroller class="section-link-2" href="#toc-spirallograph">Spirallograph</a>
+							<a data-smoothscroller class="section-link-3" href="#toc-mood-diffusion">Mood Diffusion</a>
+							<a data-smoothscroller class="section-link-4" href="#toc-waves-with-metablobs">Waves With Metablobs</a>
+						</div>
+
+						<section class="project">
+							<h2><a href="http://codepen.io/kzf/full/OPVGBG/">WebGL Game of Life</a></h2>
+							<a href="http://codepen.io/kzf/full/OPVGBG/"><img src="images/gol.png" class="site-img"></a>
+							<p>
+								A recreation of the <a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game of Life</a> in WebGL/canvas. By using a WebGL shader each update step can be computed on the GPU in parallel which allows the simulation to run blazingly fast despite simulating 1 pixel by 1 pixel cells. Since it is hard to see detail at this scale, a zoom tool (top left) can be used to zoom in for a better view. An interface is provided using <a href="https://code.google.com/p/dat-gui/">dat.GUI</a> to manipulate various simulation parameters.
+							</p>
+							<p class="text-center">
+								<a class="github-link" href="http://codepen.io/kzf/pen/OPVGBG">View Source on CodePen</a>
+							</p>
+							<footer class="tags-footer">
+								<span class="tag">Javascript</span>
+								<span class="tag">WebGL</span>
+								<span class="tag">canvas</span>
+								<span class="tag">THREE.js</span>
+							</footers>
+						</section>
+
+						<section class="project">
+							<h2><a href="http://codepen.io/kzf/full/dPoqgK/">Marching Squares Metablobs</a></h2>
+							<a href="http://codepen.io/kzf/full/dPoqgK/"><img src="images/metab.png" class="site-img"></a>
+							<p>
+								An implementation of the <a href="http://en.wikipedia.org/wiki/Marching_squares">Marching Squares</a> algorithm for computing the fixed-value contour of a 2d field. The algorithm works well when an approximation of the contour will do, since the spacing between grid lines can be controlled which controls the computational intensity. Unfortunately the algorithm does not work well for very small elements since a small spacing is needed, so I did not use this implementation for my water droplets simulation but it is a nice thing to play with in and of itself.
+							</p>
+							<p class="text-center">
+								<a class="github-link" href="http://codepen.io/kzf/pen/dPoqgK">View Source on CodePen</a>
+							</p>
+							<footer class="tags-footer">
+								<span class="tag">Javascript</span>
+								<span class="tag">canvas</span>
+							</footers>
+						</section>
+
+						<section class="project">
+							<h2><a href="http://codepen.io/kzf/full/JoGWdY/">Spirallograph</a></h2>
+							<a href="http://codepen.io/kzf/full/JoGWdY/"><img src="images/pattern.png" class="site-img"></a>
+							<p>
+								This demo came out of creating the 'Weaving' effect that you can view by selecting from the drop down menu in the top-right interface. After creating this effect and subsequently having a lot of fun playing around with parameters to see what happened I decided to add more options and give it a more user-friendly interface. Look at some of the presets or (much more fun) play around with the sliders and see what happens!
+							</p>
+							<p class="text-center">
+								<a class="github-link" href="http://codepen.io/kzf/pen/JoGWdY?editors=101">View Source on CodePen</a>
+							</p>
+							<footer class="tags-footer">
+								<span class="tag">Javascript</span>
+								<span class="tag">canvas</span>
+							</footers>
+						</section>
+
+						<section class="project">
+							<h2><a href="http://codepen.io/kzf/full/RNWbKm/">Mood Diffusion</a></h2>
+							<a href="http://codepen.io/kzf/full/RNWbKm/"><img src="images/mood.png" class="site-img"></a>
+							<p>
+								This is a demonstration of <em>mood diffusion</em>. Every pixel in the simulation represents an agent with a mood/happiness value which is indicated by a color between red (miserable) and green (ecstatic). (Forgive the garish colour scheme, but it makes sense given the narrative). The simulation parameters determine how the mood of each agent affects it's neighbours. The simulation is implemented using WebGL shaders for computational efficiency.
+							</p>
+							<p class="text-center">
+								<a class="github-link" href="http://codepen.io/kzf/pen/RNWbKm">View Source on CodePen</a>
+							</p>
+							<footer class="tags-footer">
+								<span class="tag">Javascript</span>
+								<span class="tag">WebGL</span>
+								<span class="tag">canvas</span>
+							</footers>
+						</section>
+
+						<section class="project">
+							<h2><a href="http://codepen.io/kzf/full/pvJWdW/">Waves With Metablobs</a></h2>
+							<a href="http://codepen.io/kzf/full/pvJWdW/"><img src="images/waves.png" class="site-img"></a>
+							<p>
+								This demo started from a simple 2d wave simulation but the interesting challenge was to get the water droplets to naturally merge and split as you would expect. Having already concluded that the <a data-smoothscroller class="section-link-1" href="#toc-marching-squares-metablobs">marching squares</a> method was not suitable I incorporated a WebGL shader to quickly and efficiently compute the metablob shapes as the water droplets fall.
+							</p>
+							<p class="text-center">
+								<a class="github-link" href="http://codepen.io/kzf/pen/pvJWdW?editors=001">View Source on CodePen</a>
+							</p>
+							<footer class="tags-footer">
+								<span class="tag">Javascript</span>
+								<span class="tag">WebGL</span>
+								<span class="tag">canvas</span>
+							</footers>
+						</section>
+
+						
+					</section>
+				</div>
+			</div>
+		</section>
+		<div class="home-btn-container"><a data-smoothscroller class="home-link" href="#toc-home">Home</a></div>
+
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script src="lib/toc.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
