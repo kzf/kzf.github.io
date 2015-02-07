@@ -2,9 +2,10 @@
 <html>
 	<head>
 		<title>kzf on GitHub</title>
-		<link rel="stylesheet" href="style/style.css">
-		<link href='http://fonts.googleapis.com/css?family=Chau+Philomene+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Chau+Philomene+One|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+		<link rel="stylesheet" href="style/style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
@@ -16,12 +17,15 @@
 						<div class="logo-image"></div>
 					</div>
 				</div>
+				<div class="masthead-blurb">
+					My name is Kevin and I love Javascript! I have expertise in traditional software development and front- and back-end web development.
+				</div>
 				<nav class="header-menu">
 					<div class="slide-nav">
-						<a data-smoothscroller class="section-link-0" href="#toc-projects">Projects</a>
-						<a data-smoothscroller class="section-link-1" href="#toc-demos">Demos</a>
-						<a data-smoothscroller class="section-link-2" href="#toc-demos">Other</a>
-						<a data-smoothscroller class="section-link-3" href="#toc-demos">Test Link</a>
+						<a data-smoothscroller class="section-link-0" href="#toc-about-me">About Me</a>
+						<a data-smoothscroller class="section-link-1" href="#toc-projects">Projects</a>
+						<a data-smoothscroller class="section-link-2" href="#toc-demos">Demos</a>
+						<a data-smoothscroller class="section-link-3" href="#toc-thesis">Thesis</a>
 					</div>
 				</nav>
 			</header>
@@ -34,29 +38,45 @@
 				</div>
 				<div class="col-md-9">
 					<section class="section-header">
+						<h1>About Me</h1>
+						<p class="header-blurb">
+							I am a lifelong programming who started playing around with <span class="tech">HTML</span> and <span class="tech">CSS</span> when I was 11 and before long I discovered <span class="tech">PHP</span> and then happened upon my first love, <span class="tech">Flash</span>. Since then the technologies may have changed but my passion for creating interactive web applications, tools and games hasn't. The thing that keeps me excited about web development is that there are always hundreds of new things to learn and new technologies to play with!
+						</p>
+						<p class="header-blurb">
+							In my undergraduate years I studied Computer Science and Mathematics at the <a href="http://www.unimelb.edu.au/">University of Melbourne</a>. Following on from that I moved on to study a Masters in Mathematics. After considering for a long time moving on to do a PhD and pursue a career in academia, I ultimately could not get past the fact that what I love more than anything is <span class="tech">building things</span>, and it is for that reason I am starting my career as a developer.
+						</p>
+						<div class="links-fa text-center">
+							<a href="http://github.com/kzf"><i class="fa fa-3x fa-github"></i></a>
+							<a href="http://codepen.io/kzf"><i class="fa fa-3x fa-codepen"></i></a>
+							<a href="mailto:kzfray@gmail.com"><i class="fa fa-3x fa-envelope-o"></i></a>
+						</div>
+					</section>
+
+					<section class="section-header">
 						<h1>Projects</h1>
 						<div class="section-links">
 							<a data-smoothscroller class="section-link-0" href="#toc-card-zoo">Card Zoo</a>
 							<a data-smoothscroller class="section-link-1" href="#toc-achievement-hunter">Achievement Hunter</a>
 							<a data-smoothscroller class="section-link-2" href="#toc-sketch-animator">Sketch Animator</a>
 							<a data-smoothscroller class="section-link-3" href="#toc-world-countries-quiz">World Countries Quiz</a>
-							<a data-smoothscroller class="section-link-4" href="#toc-know-your-globe">Know Your Globe</a>
-							<a data-smoothscroller class="section-link-5" href="#toc-book-hunt">Book Hunt</a>
+							<a data-smoothscroller class="section-link-4" href="#toc-tweetable-mathematical-art">Tweetable Mathematical Art</a>
+							<a data-smoothscroller class="section-link-5" href="#toc-know-your-globe">Know Your Globe</a>
+							<a data-smoothscroller class="section-link-6" href="#toc-book-hunt">Book Hunt</a>
 						</div>
 
-						<section class="project">
+						<section class="project clearfix">
 							<h2><a href="http://cardzoo.meteor.com">Card Zoo</a></h2>
 							<p>
 								<a href="http://cardzoo.meteor.com"><img src="images/cardzoo.png" class="site-img"></a>
-								My largest solo project to date, Card Zoo is a multiplayer online card game in the vain of <a href="http://en.wikipedia.org/wiki/Hearthstone:_Heroes_of_Warcraft">Hearthstone</a>. This project originally started as an exercise in recreating the Hearthstone interface in Javascript, but headed in a different direction once I realised it was a good opportunity to learn <a href="https://www.meteor.com/">Meteor</a>. Meteor allows you to use Javascript for the front and back end, and in fact the same code on client and server, so the entire project is written in Javascript! Features include:
+								<strong>Card Zoo</strong> is a multiplayer online card game in the vain of <a href="http://en.wikipedia.org/wiki/Hearthstone:_Heroes_of_Warcraft">Hearthstone</a>. This project originally started as an exercise in recreating the Hearthstone interface in Javascript, but headed in a different direction once I realised it was a good opportunity to learn <a href="https://www.meteor.com/">Meteor</a>. Meteor allows you to use Javascript for the front and back end, and in fact the same code on client and server, so the entire project is written in Javascript! Features include:
 								<ul>
-									<li>User registration</li>
+									<li>Single page app</li>
 									<li>Realtime multiplier gameplay</li>
 									<li>Chat</li>
 									<li>Opponents actions (hovering cards, etc.) visible in realtime</li>
-									<li>Build and save decks</li>
+									<li>Building and saving decks</li>
 								</ul>
-								The project is being actively worked on and at the moment does not support mobile or touch devices.
+								The project is something I am actively working on. 
 							</p>
 							<p class="text-center">
 								<a class="github-link" href="https://github.com/kzf/CardZoo">View Source on GitHub</a>
@@ -68,7 +88,7 @@
 							</footers>
 						</section>
 
-						<section class="project">
+						<section class="project clearfix">
 							<h2><a href="https://kzf.github.io/AchievementHunter">Achievement Hunter</a></h2>
 							<a href="https://kzf.github.io/AchievementHunter"><img src="images/ach.png" class="site-img"></a>
 							<p>
@@ -83,10 +103,10 @@
 							</footers>
 						</section>
 
-						<section class="project">
-							<h2><a href="https://github.com/kzf/SketchAnimator">Sketch Animator</a></h2>
+						<section class="project clearfix">
+							<h2><a href="https://kzf.github.io/SketchAnimator">Sketch Animator</a></h2>
 							<p>
-								<a href="https://github.com/kzf/SketchAnimator"><img src="images/sketch.png" class="site-img"></a>
+								<a href="https://kzf.github.io/SketchAnimator"><img src="images/sketch.png" class="site-img"></a>
 								A tool to pose and animate a 2d sketch. This was initially an implementation of the <a href="http://www-ui.is.s.u-tokyo.ac.jp/~takeo/research/rigid/">As-Rigid-As-Possible Shape Manipulation</a> algorithm for the Coursera course <a href="https://www.coursera.org/course/interactivegraphics">Interactive Computer Graphics</a>, but I tried to build a user-friendly UI and incorporate the ability to animate your sketches. Unfortunately, the A.R.A.P. algorithm involves a lot of computation which hammers a lot of Javascript engines so the tool may not run smoothly (particularly on mobile). If this is the case for you try to run in it Chrome which tends to have the best performing Javascript engine.
 							</p>
 							<p class="text-center">
@@ -98,7 +118,7 @@
 							</footers>
 						</section>
 
-						<section class="project">
+						<section class="project clearfix">
 							<h2><a href="https://kzf.github.io/WorldCountriesQuiz">World Countries Quiz</a></h2>
 							<p>
 								<a href="https://kzf.github.io/WorldCountriesQuiz"><img src="images/wcq.png" class="site-img"></a>
@@ -115,7 +135,23 @@
 							</footers>
 						</section>
 
-						<section class="project">
+						<section class="project clearfix">
+							<h2><a href="https://kzf.github.io/JSTweetableMathematicalArt">Tweetable Mathematical Art</a></h2>
+							<a href="https://kzf.github.io/JSTweetableMathematicalArt"><img src="images/tweetable.png" class="site-img"></a>
+							<p>
+								An interactive viewer for some of the <a href="http://codegolf.stackexchange.com/questions/35569/tweetable-mathematical-art">Tweetable Mathematical Art</a> posted in the thread in the StackExchange <a href="http://codegolf.stackexchange.com/">Code Golf</a> community. This was an interesting project to learn about <a href="http://en.wikipedia.org/wiki/Web_worker">Web Workers</a>
+							</p>
+							<p class="text-center">
+								<a class="github-link" href="https://github.com/kzf/JSTweetableMathematicalArt">View Source on GitHub</a>
+							</p>
+							<footer class="tags-footer">
+								<span class="tag">Javascript</span>
+								<span class="tag">Web Workers</span>
+								<span class="tag">jQuery UI</span>
+							</footers>
+						</section>
+
+						<section class="project clearfix">
 							<h2><a href="https://kzf.github.io/KnowYourGlobe">Know Your Globe</a></h2>
 							<a href="https://kzf.github.io/KnowYourGlobe"><img src="images/kyg.png" class="site-img"></a>
 							<p>
@@ -130,7 +166,7 @@
 							</footers>
 						</section>
 
-						<section class="project">
+						<section class="project clearfix">
 							<h2><a href="https://kzf.github.io/BookHunt">Book Hunt</a></h2>
 							<a href="https://kzf.github.io/BookHunt"><img src="images/bookhunt.png" class="site-img"></a>
 							<p>
@@ -163,7 +199,7 @@
 							<a data-smoothscroller class="section-link-4" href="#toc-waves-with-metablobs">Waves With Metablobs</a>
 						</div>
 
-						<section class="project">
+						<section class="project clearfix">
 							<h2><a href="http://codepen.io/kzf/full/OPVGBG/">WebGL Game of Life</a></h2>
 							<a href="http://codepen.io/kzf/full/OPVGBG/"><img src="images/gol.png" class="site-img"></a>
 							<p>
@@ -180,7 +216,7 @@
 							</footers>
 						</section>
 
-						<section class="project">
+						<section class="project clearfix">
 							<h2><a href="http://codepen.io/kzf/full/dPoqgK/">Marching Squares Metablobs</a></h2>
 							<a href="http://codepen.io/kzf/full/dPoqgK/"><img src="images/metab.png" class="site-img"></a>
 							<p>
@@ -195,7 +231,7 @@
 							</footers>
 						</section>
 
-						<section class="project">
+						<section class="project clearfix">
 							<h2><a href="http://codepen.io/kzf/full/JoGWdY/">Spirallograph</a></h2>
 							<a href="http://codepen.io/kzf/full/JoGWdY/"><img src="images/pattern.png" class="site-img"></a>
 							<p>
@@ -210,7 +246,7 @@
 							</footers>
 						</section>
 
-						<section class="project">
+						<section class="project clearfix">
 							<h2><a href="http://codepen.io/kzf/full/RNWbKm/">Mood Diffusion</a></h2>
 							<a href="http://codepen.io/kzf/full/RNWbKm/"><img src="images/mood.png" class="site-img"></a>
 							<p>
@@ -226,11 +262,11 @@
 							</footers>
 						</section>
 
-						<section class="project">
+						<section class="project clearfix">
 							<h2><a href="http://codepen.io/kzf/full/pvJWdW/">Waves With Metablobs</a></h2>
 							<a href="http://codepen.io/kzf/full/pvJWdW/"><img src="images/waves.png" class="site-img"></a>
 							<p>
-								This demo started from a simple 2d wave simulation but the interesting challenge was to get the water droplets to naturally merge and split as you would expect. Having already concluded that the <a data-smoothscroller class="section-link-1" href="#toc-marching-squares-metablobs">marching squares</a> method was not suitable I incorporated a WebGL shader to quickly and efficiently compute the metablob shapes as the water droplets fall.
+								This demo started from a simple 2d wave simulation but the interesting challenge was to get the water droplets to naturally merge and split as you would expect. Having already concluded that the <a data-smoothscroller href="#toc-marching-squares-metablobs">marching squares</a> method was not suitable I incorporated a WebGL shader to quickly and efficiently compute the metablob shapes as the water droplets fall.
 							</p>
 							<p class="text-center">
 								<a class="github-link" href="http://codepen.io/kzf/pen/pvJWdW?editors=001">View Source on CodePen</a>
@@ -244,9 +280,23 @@
 
 						
 					</section>
+
+					<section class="section-header">
+						<h1>Thesis</h1>
+						<p class="header-blurb">
+							You may be interested to look at my Masters thesis, <a href="http://www.ms.unimelb.edu.au/documents/thesis/KevinFrayMscThesis2013.pdf"><em>"Polynomial Methods in Combinatorial Geometry"</em></a>. 
+						</p>
+					</section>
+
+					<footer class="page-footer">
+						&copy; Kevin Fray, 2015 | <a href="http://github.com/kzf"><i class="fa fa-github"></i></a>
+							<a href="http://codepen.io/kzf"><i class="fa fa-codepen"></i></a>
+							<a href="mailto:kzfray@gmail.com"><i class="fa fa-envelope-o"></i></a>
+					</footer>
 				</div>
 			</div>
 		</section>
+
 		<div class="home-btn-container"><a data-smoothscroller class="home-link" href="#toc-home">Home</a></div>
 
 		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
