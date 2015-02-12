@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+    <script type="text/javascript" src="raphael.js"></script>
+    <title>Four in a Row</title>
+    <style type="text/css">
+        body { background-color: #000000; }
+        #gameContainer { text-align:center; }
+        #topButtonContainer, #bottomButtonContainer { padding:9px; }
+        #topButton, #bottomButton { font-family:Arial; font-size: 20px; text-align:center; padding:7px; }
+        .activeButton { color: #FFFFFF; background-color: #333333; }
+        .inactiveButton { color: #555555; background-color: #111111; }
+        .winner { color: green; background-color: #000000; }
+        .loser { color: red; background-color: #000000; }
+        .draw { color: white; background-color: #000000; }
+        #p1score, #p2score { font-family:Arial; font-size: 30px; text-align:center; padding:10px; }
+        #p1score { color: #cc0404; }
+        #p2score { color: #F29F05; }
+        #topButtonContainer { 
+                    -moz-transform: rotate(-180deg);  /* FF3.5+ */
+                    -webkit-transform: rotate(-180deg);  /* Safari 3.1+, Chrome */
+                    position:float; }
+        #p1turn, #p2turn { height:7px; }
+        .myturn { background-color:#FFFFFF; }
+        .notmyturn { background-color: #000000; }
+        .resetButton { font-family:Arial; font-size: 16px; padding:7px; margin-left:30px; color:grey; }
+    </style>
+    <script type="text/javascript" src="fiar.js"></script>
+    </head>
+    <body>
+        <div id="gameContainer">
+            <div id="topButtonContainer">
+                <span id="p2score"></span>
+                <span id="topButton" onClick="undo(2)" class="inactiveButton">Undo</span>
+                <span onClick="startNewGame()" class="resetButton">New Game</span>
+            </div>
+            <div id="p2turn"></div>
+            <div id="gameBoard"></div>
+            <div id="p1turn"></div>
+            <div id="bottomButtonContainer">
+                <span id="p1score"></span>
+                <span id="bottomButton" onClick="undo(1)" class="inactiveButton">Undo</span>
+                <span onClick="startNewGame()" class="resetButton">New Game</span>
+            </div>
+        </div>
+    </body>
+</html>
