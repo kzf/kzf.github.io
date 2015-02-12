@@ -23,6 +23,7 @@ body {
 .nav-header .logo-container {
 	background-color: #c9ffe9;
 	width: 100%;
+	margin-top: 50px;
 	margin-bottom: 40px;
 }
 
@@ -99,8 +100,6 @@ body {
 }
 
 .vertical-center {
-  min-height: 100%;
-  min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -417,6 +416,13 @@ body {
  * Small size screens
  */
 @media only screen and (min-width: 768px) {
+	.nav-header .logo-container {
+		margin-top: 50px;
+	}
+	.vertical-center {
+		min-height: 100%;
+  	min-height: 100vh;
+	}
 	.masthead {
 		height: 100%;
 	}
